@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:ital@1&display=swap');
+
+.sheet-two-col-outer-container {
+    height: 100%; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "left-column right-column";
+    /* border: 1px solid red;
+    position: relative; */
+    gap: 1em 1em;
+    margin: 1em;
+    font-size:1.5em;
+}
+
+.sheet-left-column {
+    grid-area: left-column;
+    height: 100%; 
+    display: grid;
+    grid-template-rows:  auto auto 1em auto auto 1fr;
+    grid-template-areas:
+    "logo"
+    "stats"
+    "."
+    "expertise"
+    "possessions"
+    "contacts";
+    /* border: 1px solid red;
+    position: relative; */
+    gap: 0.5em 0.5em;
+}
+
+.sheet-right-column {
+    grid-area: right-column;
+    height: 100%; 
+    display: grid;
+    grid-template-rows:  auto auto auto 1em auto auto auto auto auto 1em auto 1fr;
+    grid-template-areas:
+    "name"
+    "occupation"
+    "home"
+    "."
+    "hits"
+    "armour"
+    "unravelling"
+    "fortune"
+    "tradecraft"
+    "."
+    "afflictions"
+    "esoterica";
+    /* border: 1px solid red;
+    position: relative; */
+    gap: 0.5em 0.5em;
+}
+
+.sheet-logo { 
+    grid-area: logo; 
+}
+
+.sheet-name { 
+    grid-area: name; 
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-areas: "name-label name-input";
+}
+.sheet-name input {
+    width:100%;
+}
+.sheet-name-label { grid-area: name-label; }
+.sheet-name-input { grid-area: name-input; }
+
+
+.sheet-occupation { 
+    grid-area: occupation;  
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-areas: "occupation-label occupation-input";
+}
+.sheet-occupation input {
+    width:100%;
+}
+.sheet-occupation-label { grid-area: occupation-label; }
+.sheet-occupation-input { grid-area: occupation-input; }
+
+.sheet-home { 
+    grid-area: home; 
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-areas: "home-label home-input";
+}
+.sheet-home input {
+    width:100%;
+}
+.sheet-home-label { grid-area: home-label; }
+.sheet-home-input { grid-area: home-input; }
+
+.sheet-stats { 
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "physical-label physical-input"
+    "intellectual-label intellectual-input"
+    "supernatural-label supernatural-input";   
+    margin-top:1em;
+}
+.sheet-stats select{
+    width: 5em;
+}
+.sheet-physical-label { grid-area: physical-label; }
+.sheet-physical-input { grid-area: physical-input; }
+.sheet-intellectual-label { grid-area: intellectual-label; }
+.sheet-intellectual-input { grid-area: intellectual-input; }
+.sheet-supernatural-label { grid-area: supernatural-label; }
+.sheet-supernatural-input { grid-area: supernatural-input; }
+
+.sheet-tradecraft { 
+    grid-area: tradecraft; 
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-areas: "tradecraft-label tradecraft-input";
+    margin-top:1em;
+}
+.sheet-tradecraft-label { grid-area: tradecraft-label; }
+.sheet-tradecraft-input { grid-area: tradecraft-input; }
+
+.sheet-expertise { 
+    grid-area: expertise; 
+}
+
+.sheet-hits { 
+    grid-area: hits;
+    display: grid;
+    grid-template-columns: 35% 1fr auto auto auto auto;
+    grid-template-areas: "hits-label hits-input hits-fail1-label hits-fail1-checkbox hits-fail2-label hits-fail2-checkbox";    
+}
+.sheet-hits-label {grid-area:hits-label;}
+.sheet-hits-input {grid-area:hits-input;}
+.sheet-hits-fail1-label    {grid-area:hits-fail1-label; margin-left:1em;}
+.sheet-hits-fail1-checkbox {grid-area:hits-fail1-checkbox;}
+.sheet-hits-fail2-label    {grid-area:hits-fail2-label; margin-left:1em;}
+.sheet-hits-fail2-checkbox {grid-area:hits-fail2-checkbox;}
+
+
+.sheet-armour { 
+    grid-area: armour;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-areas: "armour-label armour-input";   
+}
+.sheet-armour select{
+    width: 5em;
+}
+.sheet-armour-label { grid-area: armour-label; }
+.sheet-armour-input { grid-area: armour-input; }
+
+.sheet-fortune { 
+    grid-area: fortune; 
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-areas: "fortune-label fortune-input";    
+}
+.sheet-fortune-label { grid-area: fortune-label; }
+.sheet-fortune-input { grid-area: fortune-input; }
+
+.sheet-unravelling { 
+    grid-area: unravelling;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-areas: "unravelling-label unravelling-input";  
+}
+.sheet-unravelling select{
+    width: 5em;
+}
+.sheet-unravelling-label { grid-area: unravelling-label; }
+.sheet-unravelling-input { grid-area: unravelling-input; }
+
+.sheet-possessions { 
+    grid-area: possessions;
+}
+
+.sheet-afflictions { 
+    grid-area: afflictions; 
+}
+
+.sheet-contacts { 
+    grid-area: contacts; 
+}
+
+.sheet-esoterica { 
+    grid-area: esoterica; 
+}
+
+textarea {
+    height:4em;
+    width:100%;
+}
+
+label{
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+h1{
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 3em;
+}
