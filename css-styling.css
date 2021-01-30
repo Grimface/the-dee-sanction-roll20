@@ -18,14 +18,15 @@
     grid-area: left-column;
     height: 100%; 
     display: grid;
-    grid-template-rows:  auto auto 1em auto auto 1fr;
+    grid-template-rows:  auto auto 1em auto auto auto 1fr;
     grid-template-areas:
     "logo"
     "stats"
     "."
     "expertise"
     "possessions"
-    "contacts";
+    "contacts"
+    "miscellany";
     /* border: 1px solid red;
     position: relative; */
     gap: 0.5em 0.5em;
@@ -191,6 +192,10 @@
 
 .sheet-esoterica { 
     grid-area: esoterica; 
+}
+
+.sheet-miscellany { 
+    grid-area: miscellany; 
 }
 
 textarea {
