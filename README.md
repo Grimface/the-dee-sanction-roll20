@@ -9,6 +9,8 @@ You can simply paste the two files (html and css) into the two appropriate tabs 
 
 I created this to use purely in my own home game of The Dee Sanction, but am providing it publicly in case it's of use to anyone.
 
+I've used the closest font I can find to that used in the draft PDF of the rulebook for the game logo. It's the closest I can find on Google Fonts. Let me know if you find a better one.
+
 I've mucked around with a few of the spellings, such as adding an -e to Physicalle etc, changed "Hits" to "Hyttes", and "Unravelling" to "Unravellynge". I'll be GMing this for a history teacher whose favourite period is Tudor/early modern, so doubtless he'll weigh in on this, whether I like it or not.
 
 I also added a "Notes & Miscellany" box, so players would have somewhere to jot random notes, and for me to paste in the output from @MrGarland4 on Twitter.
