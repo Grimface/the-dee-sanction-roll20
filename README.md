@@ -1,6 +1,8 @@
 # the-dee-sanction-roll20
 My ersatz Roll20 character sheet for The Dee Sanction RPG. Until there's an official one.
 
+![Screenshot of charactersheet on Roll20](DeeSanction-Roll20-screenshot.png)
+
 This requires you to be able to use custom character sheets on Roll20, and hence have a "Pro" Roll20 account I believe.
 
 Assuming you have that ability, you can use this character sheet by creating a game and choosing "custom" for the character sheet template.
