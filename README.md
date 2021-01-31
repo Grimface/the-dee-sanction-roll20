@@ -19,7 +19,4 @@ I also added a "Notes & Miscellany" box, so players would have somewhere to jot 
 
 ### TODO:
 
-- Add buttons for rolling dice. This is tricky due to the "Step up/down a die" mechanic. I could simply have 3 buttons for each rollable thing (i.e. Physicall, Intellectuall, Supernaturall, Unravelling and Armour) but that feels a bit clunky.
-- Turn Tradecraft into a radio button group, rather than a drop-down box.  This will make it look a bit more like the "real" charactersheet, and make it easier to hover over the items to see the tooltips.
-- Prettify the 3 main statistics (Physicall, Intellectuall, Supernaturall). Currently they aren't laid out as they are on the "real" charactersheet, and it would be nice if they were the same, as I like the look of the real ones.
-- Figure out how to sync the Roll20 character name with the name field on the character sheet. There must be a built--in character name attribute, different from the "attr_name" I've used (I think).
+(See the "Issues" linked above)
