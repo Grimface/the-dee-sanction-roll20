@@ -36,7 +36,7 @@
     grid-area: right-column;
     height: 100%; 
     display: grid;
-    grid-template-rows:  auto auto auto 1em auto auto auto auto auto 1em auto 1fr;
+    grid-template-rows:  auto auto auto 1em auto auto auto auto auto 1em auto auto 1fr;
     grid-template-areas:
     "name"
     "occupation"
@@ -49,7 +49,8 @@
     "tradecraft"
     "."
     "afflictions"
-    "esoterica";
+    "esoterica"
+    "credit";
     /* border: 1px solid red;
     position: relative; */
     gap: 0.5em 0.5em;
@@ -106,6 +107,7 @@
     "intellectual-label intellectual-input"
     "supernatural-label supernatural-input";   
     margin-top:1em;
+    
 }
 .sheet-stats select{
     width: 5em;
@@ -196,6 +198,15 @@
 
 .sheet-miscellany { 
     grid-area: miscellany; 
+}
+
+.sheet-credit { 
+    grid-area: credit;
+}
+
+.sheet-credit label { 
+    font-size: 0.5em;
+    text-align: right;
 }
 
 textarea {
