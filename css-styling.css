@@ -7,28 +7,25 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
     "left-column right-column";
-    /* border: 1px solid red;
-    position: relative; */
     gap: 1em 1em;
     margin: 1em;
-    font-size:1.5em;
 }
 
 .sheet-left-column {
     grid-area: left-column;
     height: 100%; 
     display: grid;
-    grid-template-rows:  auto auto 1em auto auto auto 1fr;
+    grid-template-rows:  4.5em auto auto 1em auto auto auto 1fr;
     grid-template-areas:
-    "logo"
-    "stats"
-    "."
-    "expertise"
-    "possessions"
-    "contacts"
-    "miscellany";
-    /* border: 1px solid red;
-    position: relative; */
+    "logo-top-left logo-top-right"
+    "logo-bottom logo-bottom"
+    "stats stats"
+    ". ."
+    "expertise expertise"
+    "possessions possessions"
+    "contacts contacts"
+    "credit credit";
+    /* border: 1px solid red; */
     gap: 0.5em 0.5em;
 }
 
@@ -50,15 +47,40 @@
     "."
     "afflictions"
     "esoterica"
-    "credit";
-    /* border: 1px solid red;
-    position: relative; */
+    "miscellany";
     gap: 0.5em 0.5em;
 }
 
-.sheet-logo { 
-    grid-area: logo; 
+/* Here I'm trying to recreate the logo image */
+.sheet-logo-top-left {
+    grid-area: logo-top-left;
+    font-family: 'IM Fell DW Pica', serif;
+    font-weight: bold;
+    font-size: 2em;
+    align-self:start;
+    justify-self:end;
+    align-self:start;
+    padding-top:0.5em;
 }
+.sheet-logo-top-right {
+    grid-area: logo-top-right;
+    font-family: 'IM Fell DW Pica', serif;
+    font-weight: bold;
+    font-size: 6em;
+    justify-self:start;
+    align-self:start;
+    
+}
+.sheet-logo-bottom {
+    grid-area: logo-bottom;
+    font-family: 'IM Fell DW Pica', serif;
+    font-weight: bold;
+    font-size: 5em;
+    justify-self:center;
+    align-self:start;
+}
+
+
 
 .sheet-name { 
     grid-area: name; 
@@ -205,8 +227,7 @@
 }
 
 .sheet-credit label { 
-    font-size: 0.5em;
-    text-align: right;
+    font-size:0.7em;
 }
 
 textarea {
@@ -216,9 +237,4 @@ textarea {
 
 label{
     font-family: 'IM Fell DW Pica', serif;
-}
-
-h1{
-    font-family: 'IM Fell DW Pica', serif;
-    font-size: 3em;
 }
